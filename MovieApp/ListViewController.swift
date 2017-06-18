@@ -11,32 +11,53 @@ import UIKit
 class ListViewController: UITableViewController {
     
     
-    var dataset = [
-        ("다크나이트", "영웅물에 철학에 음악까지 더해서 예술이 되다", "2008-09-04", 8.95, "darknight.jpg"),
-        ("호우시절", "때를 알고 내리는 좋은 비", "2009-10-08", 7.31, "rain.jpg"),
-        ("말할 수 없는 비밀", "여기서 너까지 다섯걸음", "2015-05-07", 9.19, "secret.jpg")
-    ]
-    
     lazy var list : [MovieVO] = {
         
         var datalist = [MovieVO]()
         
-        for (title, desc, opendate, rating, thumbnail) in self.dataset {
-            let mvo = MovieVO()
-            
-            mvo.title       = title
-            mvo.description = desc
-            mvo.openrate    = opendate
-            mvo.rating      = rating
-            mvo.thumbnail   = thumbnail
-            
-            datalist.append(mvo)
-        }
+
         
         return datalist
     }()
     
     override func viewDidLoad() {
+        
+        let url = "http://swiftapi.rubypaper.co.kr:2029/hoppin/movies?version=1&page=1&count=10&genreId=&order=releasedteasc"
+        let apiURI : URL! = URL(string: url)
+        
+        let apidata = try! Data(contentsOf: apiURI)
+        
+        let log = NSString(data: apidata, encoding: String.Encoding.utf8.rawValue) ?? ""
+        
+        NSLog("API Result=\(log)")
+        
+        do {
+            let apiDictionary = try! JSONSerialization.jsonObject(with: apidata, options: []) as! NSDictionary
+            
+            let hoppin = apiDictionary["hoppin"] as! NSDictionary
+            let movies = hoppin["movies"] as! NSDictionary
+            let movie  = movies["movie"] as! NSArray
+            
+            for row in movie {
+                
+                let r = row as! NSDictionary
+                
+                let mvo = MovieVO()
+                
+                mvo.title       = r["title"] as? String
+                mvo.description = r["genreNames"] as? String
+                mvo.thumbnail   = r["thumbnailimage"] as? String
+                mvo.detail      = r["linkUrl"] as? String
+                mvo.rating      = ((r["ratingAveragge"] as! NSString).doubleValue)
+                
+                self.list.append(mvo)
+
+            }
+        } catch {
+        
+            
+            
+        }
         
     }
     

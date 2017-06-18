@@ -47,10 +47,22 @@ class ListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        //주어진 행에 맞는 데이터 소스를 읽어본다.
         let row = self.list[indexPath.row]
         
+        //테이블 셀 객체를 직접 생성하는 대신 큐로부터 가져옴
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell")!
-        cell.textLabel?.text = row.title
+        
+        let title    = cell.viewWithTag(101) as? UILabel
+        let desc     = cell.viewWithTag(102) as? UILabel
+        let opendate = cell.viewWithTag(103) as? UILabel
+        let rating   = cell.viewWithTag(104) as? UILabel
+        
+        title?.text    = row.title
+        desc?.text     = row.description
+        opendate?.text = row.openrate
+        rating?.text   = "\(row.rating!)"
+        
         
         return cell
         

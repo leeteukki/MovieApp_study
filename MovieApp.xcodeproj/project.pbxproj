@@ -16,6 +16,10 @@
 		0681980B1EF65FBD0078C23C /* MovieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681980A1EF65FBD0078C23C /* MovieAppUITests.swift */; };
 		068198191EF660D10078C23C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068198181EF660D10078C23C /* ListViewController.swift */; };
 		0681981B1EF661680078C23C /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681981A1EF661680078C23C /* MovieVO.swift */; };
+		0681981D1EF678B30078C23C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681981C1EF678B30078C23C /* MovieCell.swift */; };
+		068198221EF6872B0078C23C /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0681981F1EF6872B0078C23C /* darknight.jpg */; };
+		068198231EF6872B0078C23C /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 068198201EF6872B0078C23C /* rain.jpg */; };
+		068198241EF6872B0078C23C /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 068198211EF6872B0078C23C /* secret.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		0681980C1EF65FBD0078C23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		068198181EF660D10078C23C /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		0681981A1EF661680078C23C /* MovieVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		0681981C1EF678B30078C23C /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		0681981F1EF6872B0078C23C /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = darknight.jpg; path = "../../../Downloads/swift03-basic-master/Thumbnail/darknight.jpg"; sourceTree = "<group>"; };
+		068198201EF6872B0078C23C /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rain.jpg; path = "../../../Downloads/swift03-basic-master/Thumbnail/rain.jpg"; sourceTree = "<group>"; };
+		068198211EF6872B0078C23C /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = secret.jpg; path = "../../../Downloads/swift03-basic-master/Thumbnail/secret.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +109,11 @@
 		068197E91EF65FBD0078C23C /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				0681981E1EF687150078C23C /* New Group */,
 				068197EA1EF65FBD0078C23C /* AppDelegate.swift */,
 				068197EC1EF65FBD0078C23C /* ViewController.swift */,
 				068197EE1EF65FBD0078C23C /* Main.storyboard */,
+				0681981C1EF678B30078C23C /* MovieCell.swift */,
 				0681981A1EF661680078C23C /* MovieVO.swift */,
 				068198181EF660D10078C23C /* ListViewController.swift */,
 				068197F11EF65FBD0078C23C /* Assets.xcassets */,
@@ -129,6 +139,16 @@
 				0681980C1EF65FBD0078C23C /* Info.plist */,
 			);
 			path = MovieAppUITests;
+			sourceTree = "<group>";
+		};
+		0681981E1EF687150078C23C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				0681981F1EF6872B0078C23C /* darknight.jpg */,
+				068198201EF6872B0078C23C /* rain.jpg */,
+				068198211EF6872B0078C23C /* secret.jpg */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068198221EF6872B0078C23C /* darknight.jpg in Resources */,
+				068198241EF6872B0078C23C /* secret.jpg in Resources */,
+				068198231EF6872B0078C23C /* rain.jpg in Resources */,
 				068197F51EF65FBD0078C23C /* LaunchScreen.storyboard in Resources */,
 				068197F21EF65FBD0078C23C /* Assets.xcassets in Resources */,
 				068197F01EF65FBD0078C23C /* Main.storyboard in Resources */,
@@ -269,6 +292,7 @@
 				068197ED1EF65FBD0078C23C /* ViewController.swift in Sources */,
 				0681981B1EF661680078C23C /* MovieVO.swift in Sources */,
 				068197EB1EF65FBD0078C23C /* AppDelegate.swift in Sources */,
+				0681981D1EF678B30078C23C /* MovieCell.swift in Sources */,
 				068198191EF660D10078C23C /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

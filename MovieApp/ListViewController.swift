@@ -20,9 +20,10 @@ class ListViewController: UITableViewController {
         return datalist
     }()
     
-    override func viewDidLoad() {
+    override func viewDidLoad( ) {
         
-        let url = "http://swiftapi.rubypaper.co.kr:2029/hoppin/movies?version=1&page=1&count=10&genreId=&order=releasedteasc"
+        
+        let url = "http://115.68.183.178:2029/hoppin/movies?version=1&page=1&count=10&genreId=&order=releasedateasc"
         let apiURI : URL! = URL(string: url)
         
         let apidata = try! Data(contentsOf: apiURI)
@@ -48,7 +49,7 @@ class ListViewController: UITableViewController {
                 mvo.description = r["genreNames"] as? String
                 mvo.thumbnail   = r["thumbnailimage"] as? String
                 mvo.detail      = r["linkUrl"] as? String
-                mvo.rating      = ((r["ratingAveragge"] as! NSString).doubleValue)
+                mvo.rating      = ((r["ratingAverage"] as! NSString).doubleValue)
                 
                 self.list.append(mvo)
 
@@ -79,7 +80,13 @@ class ListViewController: UITableViewController {
         cell.desc?.text      = row.description
         cell.opendate?.text  = row.openrate
         cell.rating?.text    = "\(row.rating!)"
-        cell.thumbnail.image = UIImage(named: row.thumbnail!)
+        
+        let url: URL! = URL(string: row.thumbnail!)
+        let imageData = try! Data(contentsOf: url)
+        cell.thumbnail.image = UIImage(data: imageData)
+        
+        
+        
         
         return cell
         

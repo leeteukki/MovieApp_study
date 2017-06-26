@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0602B7131F00DECD00257383 /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0602B7101F00DECD00257383 /* darknight.jpg */; };
+		0602B7141F00DECD00257383 /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0602B7111F00DECD00257383 /* rain.jpg */; };
+		0602B7151F00DECD00257383 /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0602B7121F00DECD00257383 /* secret.jpg */; };
 		068197EB1EF65FBD0078C23C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068197EA1EF65FBD0078C23C /* AppDelegate.swift */; };
 		068197ED1EF65FBD0078C23C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068197EC1EF65FBD0078C23C /* ViewController.swift */; };
 		068197F01EF65FBD0078C23C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068197EE1EF65FBD0078C23C /* Main.storyboard */; };
@@ -17,9 +20,6 @@
 		068198191EF660D10078C23C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068198181EF660D10078C23C /* ListViewController.swift */; };
 		0681981B1EF661680078C23C /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681981A1EF661680078C23C /* MovieVO.swift */; };
 		0681981D1EF678B30078C23C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681981C1EF678B30078C23C /* MovieCell.swift */; };
-		068198221EF6872B0078C23C /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0681981F1EF6872B0078C23C /* darknight.jpg */; };
-		068198231EF6872B0078C23C /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 068198201EF6872B0078C23C /* rain.jpg */; };
-		068198241EF6872B0078C23C /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 068198211EF6872B0078C23C /* secret.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0602B7101F00DECD00257383 /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = darknight.jpg; path = "../../swift03-basic-master/Thumbnail 2/darknight.jpg"; sourceTree = "<group>"; };
+		0602B7111F00DECD00257383 /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rain.jpg; path = "../../swift03-basic-master/Thumbnail 2/rain.jpg"; sourceTree = "<group>"; };
+		0602B7121F00DECD00257383 /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = secret.jpg; path = "../../swift03-basic-master/Thumbnail 2/secret.jpg"; sourceTree = "<group>"; };
 		068197E71EF65FBD0078C23C /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		068197EA1EF65FBD0078C23C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		068197EC1EF65FBD0078C23C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,9 +59,6 @@
 		068198181EF660D10078C23C /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		0681981A1EF661680078C23C /* MovieVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
 		0681981C1EF678B30078C23C /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		0681981F1EF6872B0078C23C /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = darknight.jpg; path = "../../../Downloads/swift03-basic-master/Thumbnail/darknight.jpg"; sourceTree = "<group>"; };
-		068198201EF6872B0078C23C /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rain.jpg; path = "../../../Downloads/swift03-basic-master/Thumbnail/rain.jpg"; sourceTree = "<group>"; };
-		068198211EF6872B0078C23C /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = secret.jpg; path = "../../../Downloads/swift03-basic-master/Thumbnail/secret.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +144,9 @@
 		0681981E1EF687150078C23C /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				0681981F1EF6872B0078C23C /* darknight.jpg */,
-				068198201EF6872B0078C23C /* rain.jpg */,
-				068198211EF6872B0078C23C /* secret.jpg */,
+				0602B7101F00DECD00257383 /* darknight.jpg */,
+				0602B7111F00DECD00257383 /* rain.jpg */,
+				0602B7121F00DECD00257383 /* secret.jpg */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -259,9 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				068198221EF6872B0078C23C /* darknight.jpg in Resources */,
-				068198241EF6872B0078C23C /* secret.jpg in Resources */,
-				068198231EF6872B0078C23C /* rain.jpg in Resources */,
+				0602B7151F00DECD00257383 /* secret.jpg in Resources */,
+				0602B7141F00DECD00257383 /* rain.jpg in Resources */,
+				0602B7131F00DECD00257383 /* darknight.jpg in Resources */,
 				068197F51EF65FBD0078C23C /* LaunchScreen.storyboard in Resources */,
 				068197F21EF65FBD0078C23C /* Assets.xcassets in Resources */,
 				068197F01EF65FBD0078C23C /* Main.storyboard in Resources */,
@@ -453,6 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hh.MovieApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -466,6 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hh.MovieApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -542,6 +544,7 @@
 				068198111EF65FBD0078C23C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		068198121EF65FBD0078C23C /* Build configuration list for PBXNativeTarget "MovieAppTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +553,7 @@
 				068198141EF65FBD0078C23C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		068198151EF65FBD0078C23C /* Build configuration list for PBXNativeTarget "MovieAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +562,7 @@
 				068198171EF65FBD0078C23C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -47,7 +47,7 @@ class ListViewController: UITableViewController {
                 
                 mvo.title       = r["title"] as? String
                 mvo.description = r["genreNames"] as? String
-                mvo.thumbnail   = r["thumbnailimage"] as? String
+                mvo.thumbnail   = r["thumbnailImage"] as? String
                 mvo.detail      = r["linkUrl"] as? String
                 mvo.rating      = ((r["ratingAverage"] as! NSString).doubleValue)
                 
@@ -84,6 +84,7 @@ class ListViewController: UITableViewController {
         let url: URL! = URL(string: row.thumbnail!)
         let imageData = try! Data(contentsOf: url)
         cell.thumbnail.image = UIImage(data: imageData)
+        
         
         
         
